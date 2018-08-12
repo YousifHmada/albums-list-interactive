@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
         position: 'relative',
     },
     item: {
+        padding: 5,
+        flexDirection: 'row',
         borderColor: '#ddd',
         borderBottomWidth: 1
     }

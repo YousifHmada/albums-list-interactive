@@ -6,7 +6,7 @@ import {AlbumList} from './AlbumList'
 class AppComponent extends React.Component {
     render() {
         return (
-            <View>
+            <View style={{flex: 1}}>
                 <Header headerName={'Albums!'} />
                 <AlbumList />
             </View>

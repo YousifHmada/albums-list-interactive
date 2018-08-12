@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { ScrollView, Text, StyleSheet } from 'react-native'
 import { AlbumDetail } from './AlbumDetail'
 import Axios from 'axios';
 
@@ -44,7 +44,7 @@ class AlbumList extends React.Component {
             ))
         }
         return (
-            <View>{this.state.loading ? (<Text style={styles.Text}>{this.state.loadingMessage}</Text>) : getListAlbums()}</View>
+            <ScrollView>{this.state.loading ? (<Text style={styles.Text}>{this.state.loadingMessage}</Text>) : getListAlbums()}</ScrollView>
         )
     }
 }
